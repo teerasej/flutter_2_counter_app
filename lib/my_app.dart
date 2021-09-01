@@ -1,7 +1,7 @@
 // my_app.dart
 
+import 'counter_view.dart';
 import 'package:flutter/material.dart';
-import 'package:my_app/counter_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
