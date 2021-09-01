@@ -10,7 +10,7 @@ class CounterView extends StatefulWidget {
 }
 
 class _CounterViewState extends State<CounterView> {
-  int count = 0;
+  int _count = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +21,18 @@ class _CounterViewState extends State<CounterView> {
         children: [
           //Text('Hello World'),
           Text(
-            '$count',
+            '$_count',
             style: TextStyle(fontSize: 60),
           ),
           SizedBox(
             width: double.infinity,
             height: 50,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  _count += 1;
+                });
+              },
               child: Text('เพิ่ม'),
             ),
           )
