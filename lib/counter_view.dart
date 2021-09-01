@@ -12,15 +12,23 @@ class CounterView extends StatefulWidget {
 class _CounterViewState extends State<CounterView> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text('Hello World'),
-        Text('0'),
-        ElevatedButton(
-          onPressed: () {},
-          child: Text('เพิ่ม'),
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Hello World'),
+          Text('0'),
+          SizedBox(
+            width: double.infinity,
+            height: 50,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text('เพิ่ม'),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
