@@ -10,6 +10,8 @@ class CounterView extends StatefulWidget {
 }
 
 class _CounterViewState extends State<CounterView> {
+  int count = 0;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,7 +21,7 @@ class _CounterViewState extends State<CounterView> {
         children: [
           //Text('Hello World'),
           Text(
-            '0',
+            '$count',
             style: TextStyle(fontSize: 60),
           ),
           SizedBox(
