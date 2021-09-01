@@ -17,8 +17,11 @@ class _CounterViewState extends State<CounterView> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Hello World'),
-          Text('0'),
+          //Text('Hello World'),
+          Text(
+            '0',
+            style: TextStyle(fontSize: 60),
+          ),
           SizedBox(
             width: double.infinity,
             height: 50,
